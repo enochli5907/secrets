@@ -1,7 +1,7 @@
 # Personal aliases and functions
 alias aliases="code ~/.bashrc"
 alias gconfig="code ~/.gitconfig"
-alias ls='ls -h --color=auto'
+alias ls='ls -h --color=auto -I "NTUSER.DAT*" -I "ntuser.*"'
 alias ll='ls -l'
 alias la='ls -a'
 alias lla='ls -la'
@@ -11,8 +11,13 @@ alias work='cs ~/Work'
 alias keygen='ssh-keygen -t rsa -b 4096'
 alias hgrep="history | grep"
 
+# Ubuntu aliases
+alias switch="../../Program\ Files/Docker/Docker/DockerCli.exe -SwitchDaemon"
+alias upgrade="sudo apt-get upgrade && sudo apt upgrade"
+alias update="sudo apt-get update && sudo apt update"
+
 # Work aliases
-alias up='source environment && docker-compose up -d'
+alias up='docker-compose up -d'
 alias down='docker-compose down'
 alias ps='docker ps'
 
