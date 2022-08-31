@@ -16,11 +16,6 @@ alias switch="../../Program\ Files/Docker/Docker/DockerCli.exe -SwitchDaemon"
 alias upgrade="sudo apt-get upgrade && sudo apt upgrade"
 alias update="sudo apt-get update && sudo apt update"
 
-# Work aliases
-alias up='docker-compose up -d'
-alias down='docker-compose down'
-alias ps='docker ps'
-
 # git aliases
 alias add='git add'
 alias cm='git commit -m'
